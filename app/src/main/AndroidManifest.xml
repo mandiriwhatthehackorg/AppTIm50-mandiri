@@ -52,6 +52,12 @@
         <activity
             android:screenOrientation="portrait" android:name=".activity.MamilesActivity">
         </activity>
+        <activity
+            android:screenOrientation="portrait" android:name=".activity.QuizActivity">
+        </activity>
+        <activity
+            android:screenOrientation="portrait" android:name=".activity.BuyQuizActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.hackathon.wah.widget.customfont.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Beli Quiz"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:background="@drawable/rekening"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:paddingBottom="48dp"
+            android:paddingTop="18dp">
+            <com.hackathon.wah.widget.customfont.CustomFontTextView
+                android:background="#fff"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="#003D79"
+                android:id="@+id/title"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAFAFA"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="Soal Quiz Jenis 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="2dp"
+                        android:textColor="#0872D9"
+                        android:textSize="@dimen/text_size_medium_small"
+                        android:text="Tingkat Kesulitan Level 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#FBDA07"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="Diperuntukkan untuk kelas 8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Rp 50.000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"/>
+                    <LinearLayout
+                        android:id="@+id/buy"
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circlebuat"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                        <ImageView
+                            android:layout_marginEnd="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/bag"/>
+                        <com.hackathon.wah.widget.customfont.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beli"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/text_size_medium_small"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="Soal Quiz Jenis 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="2dp"
+                        android:textColor="#0872D9"
+                        android:textSize="@dimen/text_size_medium_small"
+                        android:text="Tingkat Kesulitan Level 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#FBDA07"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="Diperuntukkan untuk kelas 8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Rp 50.000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"/>
+                    <LinearLayout
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circlebuat"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                        <ImageView
+                            android:layout_marginEnd="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/bag"/>
+                        <com.hackathon.wah.widget.customfont.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beli"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/text_size_medium_small"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAFAFA"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="Soal Quiz Jenis 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="2dp"
+                        android:textColor="#0872D9"
+                        android:textSize="@dimen/text_size_medium_small"
+                        android:text="Tingkat Kesulitan Level 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#FBDA07"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="Diperuntukkan untuk kelas 8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Rp 50.000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"/>
+                    <LinearLayout
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circlebuat"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                        <ImageView
+                            android:layout_marginEnd="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/bag"/>
+                        <com.hackathon.wah.widget.customfont.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beli"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/text_size_medium_small"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="Soal Quiz Jenis 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="2dp"
+                        android:textColor="#0872D9"
+                        android:textSize="@dimen/text_size_medium_small"
+                        android:text="Tingkat Kesulitan Level 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#FBDA07"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="Diperuntukkan untuk kelas 8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Rp 50.000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"/>
+                    <LinearLayout
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circlebuat"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                        <ImageView
+                            android:layout_marginEnd="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/bag"/>
+                        <com.hackathon.wah.widget.customfont.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beli"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/text_size_medium_small"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAFAFA"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="Soal Quiz Jenis 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="2dp"
+                        android:textColor="#0872D9"
+                        android:textSize="@dimen/text_size_medium_small"
+                        android:text="Tingkat Kesulitan Level 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#FBDA07"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="Diperuntukkan untuk kelas 8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Rp 50.000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"/>
+                    <LinearLayout
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circlebuat"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                        <ImageView
+                            android:layout_marginEnd="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/bag"/>
+                        <com.hackathon.wah.widget.customfont.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beli"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/text_size_medium_small"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="Soal Quiz Jenis 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="2dp"
+                        android:textColor="#0872D9"
+                        android:textSize="@dimen/text_size_medium_small"
+                        android:text="Tingkat Kesulitan Level 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#FBDA07"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="Diperuntukkan untuk kelas 8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Rp 50.000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"/>
+                    <LinearLayout
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circlebuat"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                        <ImageView
+                            android:layout_marginEnd="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/bag"/>
+                        <com.hackathon.wah.widget.customfont.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beli"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/text_size_medium_small"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAFAFA"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="Soal Quiz Jenis 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="2dp"
+                        android:textColor="#0872D9"
+                        android:textSize="@dimen/text_size_medium_small"
+                        android:text="Tingkat Kesulitan Level 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#FBDA07"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="Diperuntukkan untuk kelas 8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Rp 50.000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"/>
+                    <LinearLayout
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circlebuat"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                        <ImageView
+                            android:layout_marginEnd="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/bag"/>
+                        <com.hackathon.wah.widget.customfont.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beli"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/text_size_medium_small"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="Soal Quiz Jenis 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="2dp"
+                        android:textColor="#0872D9"
+                        android:textSize="@dimen/text_size_medium_small"
+                        android:text="Tingkat Kesulitan Level 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#FBDA07"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="Diperuntukkan untuk kelas 8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.hackathon.wah.widget.customfont.CustomFontTextView
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Rp 50.000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"/>
+                    <LinearLayout
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circlebuat"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+                        <ImageView
+                            android:layout_marginEnd="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/bag"/>
+                        <com.hackathon.wah.widget.customfont.CustomFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beli"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/text_size_medium_small"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -260,6 +260,7 @@
                         android:textSize="@dimen/text_size_small"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/quiz"
                     android:clickable="true"
                     android:focusable="true"
                     android:background="?attr/selectableItemBackground"
@@ -282,7 +283,7 @@
                         android:layout_marginBottom="8dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Beli Kuis"
+                        android:text="Beli Quiz"
                         android:textColor="#000"
                         android:layout_gravity="center_horizontal"
                         android:textSize="@dimen/text_size_small"/>
