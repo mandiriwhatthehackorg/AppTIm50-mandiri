@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.hackathon.wah.widget.customfont.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Buka Rekening Mamiles"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:scrollbars="none">
+        <LinearLayout
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="60dp"
+            android:paddingTop="28dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp">
+                <com.hackathon.wah.widget.customfont.CustomFontAppCompatEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Anak"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890-.,!? "
+                    android:inputType="textFilter|textCapWords"
+                    android:maxLength="100"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/text_size_medium_large"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp">
+                <com.hackathon.wah.widget.customfont.CustomFontAppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No Handphone"
+                    android:inputType="phone"
+                    android:maxLength="100"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/text_size_medium_large"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp">
+                <com.hackathon.wah.widget.customfont.CustomFontAppCompatEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alamat E-mail"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="100"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/text_size_medium_large"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp">
+                <com.hackathon.wah.widget.customfont.CustomFontAppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No Kartu Keluarga"
+                    android:inputType="number"
+                    android:maxLength="100"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/text_size_medium_large"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp">
+                <com.hackathon.wah.widget.customfont.CustomFontAppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tempat Lahir"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/text_size_medium_large"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:id="@+id/date_layout">
+                <com.hackathon.wah.widget.customfont.CustomFontAppCompatEditText
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tanggal Lahir"
+                    android:inputType="date"
+                    android:maxLength="100"
+                    android:imeOptions="actionDone"
+                    android:textSize="@dimen/text_size_medium_large"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.hackathon.wah.widget.customfont.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Unggah Foto Kartu Keluarga"
+                android:layout_marginStart="6dp"
+                />
+            <ImageView
+                android:id="@+id/camerakk"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="24dp"
+                android:src="@drawable/addphoto"
+                android:elevation="2dp"
+                android:background="@drawable/circlephoto"
+                android:layout_marginStart="6dp"
+                />
+            <com.hackathon.wah.widget.customfont.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unggah Foto Wefie"
+                android:maxLines="2"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="24dp"
+                />
+            <com.hackathon.wah.widget.customfont.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="(Foto orang tua dan anak bersama kartu identitas anak)"
+                android:layout_marginStart="6dp"
+                android:textSize="@dimen/text_size_small"
+                />
+            <ImageView
+                android:id="@+id/camerapelajar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="24dp"
+                android:src="@drawable/addphoto"
+                android:elevation="2dp"
+                android:background="@drawable/circlephoto"
+                android:layout_marginStart="6dp"
+                />
+            <com.hackathon.wah.widget.customfont.CustomFontButton
+                android:id="@+id/buat"
+                android:layout_marginTop="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buat Sekarang"
+                android:textColor="#fff"
+                android:background="@drawable/circlebuat"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

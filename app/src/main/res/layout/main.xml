@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/mySurfaceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.hackathon.wah.widget.CapturePreview
+            android:id="@+id/capture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </com.hackathon.wah.widget.CapturePreview>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_marginEnd="105dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/maincapture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <ImageButton android:id="@+id/camera"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="22dp"
+        android:src="@drawable/camera"/>
+    <ImageButton android:id="@+id/library"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/camera"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="34dp"
+        android:src="@drawable/library"/>
+    <ImageButton android:id="@+id/back"
+        android:background="@null"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/back"/>
+</RelativeLayout>
